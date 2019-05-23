@@ -1,3 +1,6 @@
 from django.contrib import admin
 
-# Register your models here.
+from rentals.models import Property, Category
+
+admin.site.register(Category)
+admin.site.register(Property)
