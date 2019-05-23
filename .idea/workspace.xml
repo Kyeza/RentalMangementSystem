@@ -1,47 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a1ef6666-7096-4525-9cac-c1a4f22c5a1f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rentals/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rentals/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rentals/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rentals/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rentals/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rentals/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rentals/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rentals/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/rentals/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/users/authentication/landing_page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/users/authentication/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/users/authentication/password_reset.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/users/authentication/password_reset_complete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/users/authentication/password_reset_confirm.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/users/authentication/password_reset_done.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/users/authentication/profile.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/users/authentication/signup_form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/users/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/migrations/0002_auto_20190522_2301.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/static/users/users.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/rental_system.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rental_system.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rental_system/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/rental_system/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rental_system/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/rental_system/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
-    </list>
+    <list default="true" id="a1ef6666-7096-4525-9cac-c1a4f22c5a1f" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,11 +13,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="18">
               <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/readme.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor>
+                <caret lean-forward="true" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -255,6 +227,7 @@
       <workItem from="1558551043329" duration="16103000" />
       <workItem from="1558589604614" duration="977000" />
       <workItem from="1558590980496" duration="900000" />
+      <workItem from="1558591917395" duration="231000" />
     </task>
     <servers />
   </component>
@@ -295,8 +268,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25718608" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26096824" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
