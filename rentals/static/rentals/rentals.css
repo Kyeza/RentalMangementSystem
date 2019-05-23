@@ -1,0 +1,76 @@
+:root {
+    --input-padding-x: 1.5rem;
+}
+
+html {
+    font-size: 1rem;
+}
+
+/*noinspection ALL*/
+@include media-breakpoint-up(sm) {
+    html {
+        font-size: 1.2rem;
+    }
+}
+
+/*noinspection ALL*/
+@include media-breakpoint-up(md) {
+    html {
+        font-size: 1.4rem;
+    }
+}
+
+/*noinspection ALL*/
+@include media-breakpoint-up(lg) {
+    html {
+        font-size: 1.6rem;
+    }
+}
+
+body {
+    background: #fafafa;
+    color: #333333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #444444;
+}
+
+.bg-steel {
+    background-color: #5f788a;
+}
+
+.content-section {
+    background: #ffffff;
+    padding: 10px 20px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    margin-top: 5rem;
+}
+
+.property-img {
+  height: 65px;
+  width: 100%;
+  margin-right: 16px;
+}
+
+.property-title {
+  color: #444444;
+}
+
+a.property-title:hover {
+  color: #428bca;
+  text-decoration: none;
+}
+
+.property-content {
+  white-space: pre-line;
+}
+
+.property-metadata {
+  padding-bottom: 1px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid #e3e3e3
+}
+
