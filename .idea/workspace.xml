@@ -13,23 +13,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.travis.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/readme.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor>
-                <caret lean-forward="true" />
-              </first_editor>
-              <second_editor />
+        <entry file="file://$PROJECT_DIR$/users/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="236">
+              <caret line="39" column="30" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
+              <folding>
+                <element signature="e#376#733#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -93,6 +84,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -100,11 +92,25 @@
               <item name="rental_system" type="b2602c69:ProjectViewProjectNode" />
               <item name="rental_system" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="rental_system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rental_system" type="462c0819:PsiDirectoryNode" />
+              <item name="rental_system" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rental_system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rental_system" type="462c0819:PsiDirectoryNode" />
+              <item name="rentals" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rental_system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rental_system" type="462c0819:PsiDirectoryNode" />
+              <item name="users" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -227,7 +233,7 @@
       <workItem from="1558551043329" duration="16103000" />
       <workItem from="1558589604614" duration="977000" />
       <workItem from="1558590980496" duration="900000" />
-      <workItem from="1558591917395" duration="231000" />
+      <workItem from="1558591917395" duration="596000" />
     </task>
     <servers />
   </component>
@@ -264,7 +270,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17980000" />
+    <option name="totallyTimeSpent" value="18680000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -485,21 +491,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/users/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="39" column="30" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
-          <folding>
-            <element signature="e#376#733#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor>
-            <caret column="138" selection-start-column="138" selection-end-column="138" />
+            <caret lean-forward="true" />
           </first_editor>
           <second_editor />
         </state>
@@ -509,6 +505,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/users/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="39" column="30" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
+          <folding>
+            <element signature="e#376#733#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
