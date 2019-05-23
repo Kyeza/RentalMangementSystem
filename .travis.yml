@@ -1,3 +1,6 @@
+sudo: required
+dist: xenial
+
 language: python
 
 python:
@@ -7,7 +10,7 @@ services:
   - mysql
 
 env:
-  - DJANGO=2.2 DB=sqlite
+  - DJANGO=2.2
 
 install:
   - pip install -r requirements.txt
