@@ -1,7 +1,7 @@
 import logging
 
-from django.contrib import messages
-from django.contrib.auth import login, authenticate
+from django.contrib.auth import login
+from django.contrib.auth.decorators import login_required
 from django.http import Http404
 from django.shortcuts import render, redirect
 from django.views.generic.edit import CreateView
@@ -57,6 +57,7 @@ class LandlordSignUpView(CreateView):
         return redirect('login')
 
 
+@login_required
 def user_profile(request, username):
     try:
         user = User.objects.get(username=username)
