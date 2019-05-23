@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/Kyeza/RentalMangementSystem.svg?branch=ft-auth)](https://travis-ci.com/Kyeza/RentalMangementSystem)
+
 # Rental Management System
 
 The Rental Management System supports and optimises all business processes in the property/House rental industry. The system is a web application, which means that the system is easy to update and maintain without distributing and installing new software.
