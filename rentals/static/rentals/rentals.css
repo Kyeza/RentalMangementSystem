@@ -49,6 +49,12 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 5rem;
 }
 
+.application-img {
+  height: 65px;
+  width: 65px;
+  margin-right: 16px;
+}
+
 .property-img {
   height: 65px;
   width: 100%;

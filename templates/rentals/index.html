@@ -28,7 +28,10 @@
                                     </div>
                                 {% elif user.is_tenant %}
                                     <div>
-                                        <a class="btn btn-success btn-sm mt-1 mb-1" href="#">Apply</a>
+                                        <a class="btn btn-success btn-sm mt-1 mb-1" href="{% url 'users:application_create' %}">Apply</a>
+                                    </div>
+                                    <div>
+                                        <a class="btn btn-success btn-sm mt-1 mb-1" href="#">Save</a>
                                     </div>
                                 {% endif %}
                             </div>
