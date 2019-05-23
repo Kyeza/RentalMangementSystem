@@ -6,7 +6,7 @@ from django.http import Http404
 from django.shortcuts import render, redirect
 from django.views.generic.edit import CreateView
 
-from users.forms import TenantRegistrationForm
+from users.forms import TenantRegistrationForm, LandlordRegistrationForm
 from users.models import User
 
 log = logging.getLogger('custom')
@@ -17,7 +17,7 @@ def signup_page(request):
         user_type = request.POST.get('user_type')
         if user_type == 'tenant':
             return redirect('users:tenant_signup')
-        elif user_type == 'tenant':
+        elif user_type == 'landlord':
             return redirect('users:landlord_signup')
     else:
         return render(request, 'users/authentication/landing_page.html', {'title': 'Sign Up'})
@@ -42,7 +42,7 @@ class TenantSignUpView(CreateView):
 
 class LandlordSignUpView(CreateView):
     model = User
-    form_class = TenantRegistrationForm
+    form_class = LandlordRegistrationForm
     template_name = 'users/authentication/signup_form.html'
 
     def get_context_data(self, **kwargs):
@@ -67,4 +67,8 @@ def user_profile(request, username):
         if request.method == 'POST':
             pass
         else:
-            return render(request, 'users/authentication/profile.html')
+            context = {
+                'title': f'{user.username.capitalize()} Profile',
+            }
+
+        return render(request, 'users/authentication/profile.html', context)

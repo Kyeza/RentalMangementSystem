@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% load humanize %}
+
+{% block content %}
+    <article class="media content-section">
+        <div class="media-body">
+            <div class="property-metadata">
+                <span class="font-weight-light">Landlord: </span>
+                <a class="mr-2" href="#">{{ object.owner }}</a>
+                {% if object.owner.phone_number %}
+                    <small class="text-muted">{{ object.owner.phone_number }}</small>
+                {% else %}
+                    <small class="text-muted">{{ object.owner.user.email }}</small>
+                {% endif %}
+                {% if object.owner.user == user %}
+                    <div>
+                        <a class="btn btn-secondary btn-sm mt-2 mb-1" href="{% url 'rentals:property_update' object.id %}">Update</a>
+                        <a class="btn btn-danger btn-sm mt-2 mb-1" href="{% url 'rentals:property_delete' object.id %}">Delete</a>
+                    </div>
+                {% elif user.is_tenant %}
+                    <div>
+                        <a class="btn btn-success btn-sm mt-1 mb-1" href="#">Apply</a>
+                        <a class="btn btn-danger btn-sm mt-1 mb-1" href="#">Cancel</a>
+                    </div>
+                {% endif %}
+            </div>
+            <h2 class="lead property-title text-center">{{ object.name }}</h2>
+            <div class="d-flex flex-row justify-content-center">
+                <img class="img-fluid w-50" src="{{ object.image.url }}">
+            </div>
+            <p class="property-content"><span class="font-weight-light text-info">Description: </span>{{ object.description }}</p>
+            <div>
+                <small class="text-muted">{{ object.address }}</small> |
+                <small class="text-muted">UGX {{ object.price|intcomma }}</small> |
+                <small class="text-muted">{{ object.category }}</small> |
+                <small class="text-muted">{{ object.date_listed|date:"F d, Y" }}</small>
+            </div>
+        </div>
+    </article>
+{% endblock content %}
