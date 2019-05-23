@@ -4,10 +4,26 @@ from django.views.generic.detail import DetailView
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 
 from rentals.models import Property
+from users.models import LandLord
 
 
 def index(request):
-    return render(request, 'rentals/index.html')
+    properties = Property.objects.all()
+    context = {
+        'title': 'Properties for rent',
+        'properties': properties
+    }
+    return render(request, 'rentals/index.html', context)
+
+
+def owned_property(request, username):
+    landlord = LandLord.objects.filter(user__username=username).first()
+    user_property = landlord.property_set.all()
+
+    context = {
+        'user_property': user_property
+    }
+    return render(request, 'rentals/my_properties.html', context)
 
 
 class PropertyCreateView(LoginRequiredMixin, UserPassesTestMixin, CreateView):

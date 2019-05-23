@@ -1,0 +1,162 @@
+{% extends 'base.html' %}
+{% load humanize %}
+
+{% block  content %}
+    <div class="jumbotron-fluid">
+        <h1 class="display-4 text-info text-center border-bottom mt-5 mb-4 font-weight-light">
+            Property Management
+        </h1>
+    </div>
+    <div class="container">
+        <div class="d-flex flex-column">
+            <h5 class="lead text-info text-center border-bottom mt-5 font-weight-light">HOTELS</h5>
+            <div class="row">
+                {% for object in user_property %}
+                    {% if object.category.name == 'HOTEL' %}
+                        <div class="col-sm-6 bg-light">
+                            <div class="media content-section">
+                                <div class="media-body">
+                                    <div class="property-metadata">
+                                        <span class="font-weight-light">Landlord: </span>
+                                        <a class="mr-2" href="#">{{ object.owner }}</a>
+                                        {% if object.owner.phone_number %}
+                                            <small class="text-muted">{{ object.owner.phone_number }}</small>
+                                        {% else %}
+                                            <small class="text-muted">{{ object.owner.user.email }}</small>
+                                        {% endif %}
+                                        <div>
+                                            <a class="btn btn-secondary btn-sm mt-2 mb-1" href="{% url 'rentals:property_update' object.id %}">Update</a>
+                                            <a class="btn btn-danger btn-sm mt-2 mb-1" href="{% url 'rentals:property_delete' object.id %}">Delete</a>
+                                        </div>
+                                    </div>
+                                    <h2 class="lead property-title text-center">{{ object.name }}</h2>
+                                    <div class="d-flex flex-row justify-content-center">
+                                        <img class="img-fluid w-100"  src="{{ object.image.url }}">
+                                    </div>
+                                    <p class="property-content"><span class="font-weight-light text-info">Description: </span>{{ object.description }}</p>
+                                    <div>
+                                        <small class="text-muted">{{ object.address }}</small> |
+                                        <small class="text-muted">UGX {{ object.price|intcomma }}</small> |
+                                        <small class="text-muted">{{ object.category }}</small> |
+                                        <small class="text-muted">{{ object.date_listed|date:"F d, Y" }}</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+            <h5 class="lead text-info text-center border-bottom mt-5 font-weight-light">APARTMENTS</h5>
+            <div class="row"">
+                {% for object in user_property %}
+                    {% if object.category.name == 'APARTMENT' %}
+                        <div class="col-sm-6 bg-light">
+                            <div class="media content-section">
+                                <div class="media-body">
+                                    <div class="property-metadata">
+                                        <span class="font-weight-light">Landlord: </span>
+                                        <a class="mr-2" href="#">{{ object.owner }}</a>
+                                        {% if object.owner.phone_number %}
+                                            <small class="text-muted">{{ object.owner.phone_number }}</small>
+                                        {% else %}
+                                            <small class="text-muted">{{ object.owner.user.email }}</small>
+                                        {% endif %}
+                                        <div>
+                                            <a class="btn btn-secondary btn-sm mt-2 mb-1" href="{% url 'rentals:property_update' object.id %}">Update</a>
+                                            <a class="btn btn-danger btn-sm mt-2 mb-1" href="{% url 'rentals:property_delete' object.id %}">Delete</a>
+                                        </div>
+                                    </div>
+                                    <h2 class="lead property-title text-center">{{ object.name }}</h2>
+                                    <div class="d-flex flex-row justify-content-center">
+                                        <img class="img-fluid w-100"  src="{{ object.image.url }}">
+                                    </div>
+                                    <p class="property-content"><span class="font-weight-light text-info">Description: </span>{{ object.description }}</p>
+                                    <div>
+                                        <small class="text-muted">{{ object.address }}</small> |
+                                        <small class="text-muted">UGX {{ object.price|intcomma }}</small> |
+                                        <small class="text-muted">{{ object.category }}</small> |
+                                        <small class="text-muted">{{ object.date_listed|date:"F d, Y" }}</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+            <h5 class="lead text-info text-center border-bottom mt-5 font-weight-light">GUESTHOUSES</h5>
+            <div class="row">
+                {% for object in user_property %}
+                    {% if object.category.name == 'GUESTHOUSE' %}
+                        <div class="col-sm-6 bg-light">
+                            <div class="media content-section">
+                                <div class="media-body">
+                                    <div class="property-metadata">
+                                        <span class="font-weight-light">Landlord: </span>
+                                        <a class="mr-2" href="#">{{ object.owner }}</a>
+                                        {% if object.owner.phone_number %}
+                                            <small class="text-muted">{{ object.owner.phone_number }}</small>
+                                        {% else %}
+                                            <small class="text-muted">{{ object.owner.user.email }}</small>
+                                        {% endif %}
+                                        <div>
+                                            <a class="btn btn-secondary btn-sm mt-2 mb-1" href="{% url 'rentals:property_update' object.id %}">Update</a>
+                                            <a class="btn btn-danger btn-sm mt-2 mb-1" href="{% url 'rentals:property_delete' object.id %}">Delete</a>
+                                        </div>
+                                    </div>
+                                    <h2 class="lead property-title text-center">{{ object.name }}</h2>
+                                    <div class="d-flex flex-row justify-content-center">
+                                        <img class="img-fluid w-100"  src="{{ object.image.url }}">
+                                    </div>
+                                    <p class="property-content"><span class="font-weight-light text-info">Description: </span>{{ object.description }}</p>
+                                    <div>
+                                        <small class="text-muted">{{ object.address }}</small> |
+                                        <small class="text-muted">UGX {{ object.price|intcomma }}</small> |
+                                        <small class="text-muted">{{ object.category }}</small> |
+                                        <small class="text-muted">{{ object.date_listed|date:"F d, Y" }}</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+            <h5 class="lead text-info text-center border-bottom mt-5 font-weight-light">RENTALS</h5>
+            <div class="row">
+                {% for object in user_property %}
+                    {% if object.category.name == 'RENTAL' %}
+                        <div class="col-sm-6 bg-light">
+                            <div class="media content-section">
+                                <div class="media-body">
+                                    <div class="property-metadata">
+                                        <span class="font-weight-light">Landlord: </span>
+                                        <a class="mr-2" href="#">{{ object.owner }}</a>
+                                        {% if object.owner.phone_number %}
+                                            <small class="text-muted">{{ object.owner.phone_number }}</small>
+                                        {% else %}
+                                            <small class="text-muted">{{ object.owner.user.email }}</small>
+                                        {% endif %}
+                                        <div>
+                                            <a class="btn btn-secondary btn-sm mt-2 mb-1" href="{% url 'rentals:property_update' object.id %}">Update</a>
+                                            <a class="btn btn-danger btn-sm mt-2 mb-1" href="{% url 'rentals:property_delete' object.id %}">Delete</a>
+                                        </div>
+                                    </div>
+                                    <h2 class="lead property-title text-center">{{ object.name }}</h2>
+                                    <div class="d-flex flex-row justify-content-center">
+                                        <img class="img-fluid w-100"  src="{{ object.image.url }}">
+                                    </div>
+                                    <p class="property-content"><span class="font-weight-light text-info">Description: </span>{{ object.description }}</p>
+                                    <div>
+                                        <small class="text-muted">{{ object.address }}</small> |
+                                        <small class="text-muted">UGX {{ object.price|intcomma }}</small> |
+                                        <small class="text-muted">{{ object.category }}</small> |
+                                        <small class="text-muted">{{ object.date_listed|date:"F d, Y" }}</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock content %}
