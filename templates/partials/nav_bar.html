@@ -18,9 +18,15 @@
                 {% if user.is_authenticated %}
                     {% if user.is_landlord %}
                         <li class="nav-item">
+                            <a class="nav-link" href="{% url 'users:application_list' %}">Tenant Applications</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="{% url 'rentals:owned_property' user.username %}">My Properties</a>
                         </li>
                     {% else %}
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'users:application_list' %}">My applications</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Saved Properties</a>
                         </li>
