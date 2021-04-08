@@ -1,5 +1,5 @@
 bootstrap4==0.1.0
-Django==2.2.1
+Django==2.2.20
 django-crispy-forms==1.7.2
 django-messages-ui==2.0.2
 mysqlclient==1.4.2.post1
