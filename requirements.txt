@@ -3,7 +3,7 @@ Django==2.2.1
 django-crispy-forms==1.7.2
 django-messages-ui==2.0.2
 mysqlclient==1.4.2.post1
-Pillow==6.0.0
+Pillow==9.0.1
 python-memcached==1.59
 pytz==2019.1
 six==1.12.0
