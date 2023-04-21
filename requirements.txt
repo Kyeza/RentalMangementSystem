@@ -7,6 +7,6 @@ Pillow==6.0.0
 python-memcached==1.59
 pytz==2019.1
 six==1.12.0
-sqlparse==0.3.0
+sqlparse==0.4.4
 virtualenv==16.5.0
 virtualenvwrapper-win==1.2.5
